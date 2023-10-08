@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-pzik
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-95-tenant/load-app-986f37e4-be0a-4099-9b97-55b3bb5784bf/devfile-sample-python-basic-pzik@sha256:507e3fb54538b12eb59facfa69c7fe9141a3068d985d0c221664caf7cf794aa1
+        name: my-python
+        resources: {}
+status: {}
